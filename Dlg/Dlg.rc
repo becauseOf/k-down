@@ -1,0 +1,392 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Dlg.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Dlg.ico"
+IDI_ICON_SEARCH1        ICON                    "icon\\放大镜.ico"
+IDI_ICON_SEARCH2        ICON                    "icon\\小灯泡.ico"
+IDI_ICON_SET2           ICON                    "icon\\单齿轮.ico"
+IDI_ICON_SET1           ICON                    "icon\\双齿轮.ico"
+IDI_ICON_FEEDBACK2      ICON                    "icon\\白色铅笔.ico"
+IDI_ICON_FEEDBACK       ICON                    "icon\\黑色铅笔.ico"
+IDI_ICON_UPLOAD1        ICON                    "icon\\白色上传.ico"
+IDI_ICON_UPLOAD2        ICON                    "icon\\黑色上传.ico"
+IDI_ICON_IP1            ICON                    "icon\\扳手.ico"
+IDI_ICON_IP2            ICON                    "icon\\锤子.ico"
+IDI_ICON_START1         ICON                    "icon\\勾.ico"
+IDI_ICON_OK             ICON                    "icon\\开始.ico"
+IDI_ICON_PAUSE1         ICON                    "icon\\白色暂停.ico"
+IDI_ICON_PAUSE2         ICON                    "icon\\黑色暂停.ico"
+IDI_ICON_DELETE1        ICON                    "icon\\删除.ico"
+IDI_ICON_DELETE2        ICON                    "icon\\障碍.ico"
+IDI_ICON_MY             ICON                    "icon\\我的下载.ico"
+IDI_ICON_PRIVACY        ICON                    "icon\\隐私.ico"
+IDI_ICON_NOW            ICON                    "icon\\正在下载.ico"
+IDI_ICON_CAN            ICON                    "icon\\垃圾箱.ico"
+IDI_ICON_SEARCH3        ICON                    "icon\\放大镜32.ico"
+IDI_ICON_CANCEL1        ICON                    "icon\\无框叉.ico"
+IDI_ICON_RIGHT1         ICON                    "icon\\无框勾.ico"
+IDI_ICON_DOWNLOAD       ICON                    "icon\\下载.ico"
+IDI_ICON_SET3           ICON                    "icon\\单齿轮32.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DOWNLOAD DIALOGEX 0, 0, 319, 214
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Eagle"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "设置",IDC_BUTTON_SETTING,132,3,56,24
+    PUSHBUTTON      "反馈",IDC_BUTTON_FEEDBACK,192,3,56,24
+    PUSHBUTTON      "新建",IDC_BUTTON_NEWASSIGNMENT,23,14,14,9,NOT WS_VISIBLE
+    PUSHBUTTON      "开始",IDC_BUTTON_START,133,30,56,24
+    PUSHBUTTON      "暂停",IDC_BUTTON_PAUSE,193,30,56,24
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,253,30,56,24
+    PUSHBUTTON      "隐私空间",IDC_BUTTON_PRIVACY,6,91,56,19
+    PUSHBUTTON      "",IDC_BUTTON_RECYCLEBIN,6,108,56,19,NOT WS_VISIBLE
+    PUSHBUTTON      "正在下载",IDC_BUTTON_NOWDOWNLOAD,6,73,56,19
+    CONTROL         "",IDC_PROGRESS_DOWNLOADPROGRESS,"msctls_progress32",WS_BORDER,115,191,201,14
+    CONTROL         "",IDC_LIST_MISSION,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,66,55,251,130
+    PUSHBUTTON      "我的下载",IDC_BUTTON_MYDOWNLOAD,6,55,56,19
+    PUSHBUTTON      "搜索",IDC_BUTTON_SEARCH,73,3,56,24
+    PUSHBUTTON      "上传",IDC_BUTTON_UPLOAD,253,3,56,24
+    PUSHBUTTON      "设置服务器IP",IDC_BUTTON_SETIP,73,30,56,24
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP,6,1,51,52
+    PUSHBUTTON      "下载进度：",IDC_BUTTON1,65,190,50,14
+END
+
+IDD_PRIVACYPASSWORD DIALOGEX 0, 0, 173, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "隐私空间密码设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,21,128,50,14
+    PUSHBUTTON      "取消",IDCANCEL,97,128,50,14
+    EDITTEXT        IDC_EDIT_PRIVACYPASSWORD,88,43,76,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "设置隐私密码：",IDC_STATIC,20,43,58,14,0,WS_EX_RIGHT
+    LTEXT           "确认隐私密码：",IDC_STATIC,19,81,60,14,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_PRIVACYPASSWORDOK,88,81,75,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_FEEDBACK DIALOGEX 0, 0, 200, 118
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户反馈"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,115,97,50,14
+    PUSHBUTTON      "提交",IDC_BUTTON_FEEDBACKSUBMIT,23,97,50,14
+    EDITTEXT        IDC_EDIT_FEEDBACK,7,20,186,70,ES_AUTOHSCROLL
+    LTEXT           "用户反馈",IDC_STATIC,7,7,44,13
+END
+
+IDD_NEWASSIGNMENT DIALOGEX 0, 0, 272, 204
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建任务"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,140,183,50,14
+    PUSHBUTTON      "取消",IDCANCEL,205,183,50,14
+    EDITTEXT        IDC_EDIT_DOWNLOAD,15,31,242,14,ES_AUTOHSCROLL
+    LTEXT           "文件名：",IDC_STATIC,23,74,32,14
+    EDITTEXT        IDC_EDIT_FILE,77,71,131,14,ES_AUTOHSCROLL
+    LTEXT           "下载到：",IDC_STATIC,21,111,32,14
+    GROUPBOX        "下载网址",IDC_STATIC,7,15,258,38
+    EDITTEXT        IDC_EDIT_SAVE,20,135,176,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "浏览",IDC_BUTTON_SAVE,207,134,50,14
+    LTEXT           "文件大小：",IDC_STATIC,23,91,41,8
+    EDITTEXT        IDC_EDIT_FILESIZE,77,90,61,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PRIVACYHOME DIALOGEX 0, 0, 140, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "隐私空间"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,15,71,50,14
+    PUSHBUTTON      "取消",IDCANCEL,83,72,50,14
+    LTEXT           "隐私空间",IDC_STATIC,14,13,38,10
+    LTEXT           "隐私空间密码：",IDC_STATIC,14,31,58,10
+    EDITTEXT        IDC_EDIT_PRIVACYPASSWORD,14,49,118,14,ES_AUTOHSCROLL
+END
+
+IDD_SETTING DIALOGEX 0, 0, 211, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,186,50,14
+    PUSHBUTTON      "取消",IDCANCEL,117,186,50,14
+    CONTROL         "开机时自动启动",IDC_CHECK_FIRSTBOOTDEVICE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,44,26,115,10
+    CONTROL         "启动后自动开始未完成任务",IDC_CHECK_DOWNLOADWHENSTART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,44,44,115,10
+    LTEXT           "设置默认下载目录：",IDC_STATIC,44,88,90,11
+    LTEXT           "剩余空间：",IDC_STATIC,44,126,45,8
+    PUSHBUTTON      "浏览",IDC_BUTTON_SCAN,153,103,44,18
+    PUSHBUTTON      "隐私空间密码设置",IDC_BUTTON_TOPRIVACY,44,157,91,17
+    GROUPBOX        "启动设置",IDC_STATIC,7,7,197,63
+    GROUPBOX        "常用设置",IDC_STATIC,7,71,197,72
+    GROUPBOX        "隐私空间设置",IDC_STATIC,7,141,197,40
+    EDITTEXT        IDC_EDIT_SAVE,43,105,103,14,ES_AUTOHSCROLL
+END
+
+IDD_CHANGEPASSWORD DIALOGEX 0, 0, 173, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "隐私空间密码设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确定",IDOK,23,128,50,14
+    PUSHBUTTON      "取消",IDCANCEL,99,128,50,14
+    EDITTEXT        IDC_EDIT_PRIVACYPASSWORD,88,24,76,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORDOK,88,92,76,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "修改隐私密码：",IDC_STATIC,20,26,58,14,0,WS_EX_RIGHT
+    LTEXT           "确认密码：",IDC_STATIC,32,92,46,14,0,WS_EX_RIGHT
+    LTEXT           "原密码：",IDC_STATIC,18,59,60,14,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_LASTPASSWORD,88,58,75,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_SEARCH DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SEARCH"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "下载",IDOK,124,161,50,14
+    CONTROL         "",IDC_LIST_SEARCH,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,42,302,113
+    PUSHBUTTON      "点击进行搜索",IDC_BUTTON_SEARCH,25,15,75,18
+    EDITTEXT        IDC_EDIT_SEARCHMESSAGE,127,17,152,14,ES_AUTOHSCROLL
+END
+
+IDD_SETIP DIALOGEX 0, 0, 174, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,29,63,50,14
+    PUSHBUTTON      "取消",IDCANCEL,95,63,50,14
+    EDITTEXT        IDC_EDIT_IP,29,37,114,14,ES_AUTOHSCROLL
+    LTEXT           "请设置IP地址",IDC_STATIC,31,16,48,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Dlg.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Dlg.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DOWNLOAD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 318
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_PRIVACYPASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_FEEDBACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_NEWASSIGNMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_PRIVACYHOME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_CHANGEPASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_SETIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TITLE               BITMAP                  "Title.bmp"
+IDB_BK2                 BITMAP                  "BK4.bmp"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Dlg.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
